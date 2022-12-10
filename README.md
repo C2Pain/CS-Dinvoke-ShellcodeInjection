@@ -3,6 +3,8 @@ DInvoke version Shellcode Injection POC in C#
 
 Classic Injection, Dynamic API injection, Manual Mapping, Overload Mapping and Syscalls
 
+Please note that no Anti-virus or EDR bypass has been implemented. 
+
 	Usage: shellcodeinjection.exe <method> <Process Name> -f <rawfile path>
 
 	Method: -c: classic -d: dynamicinvoke -m: manualmap -o: overload -s: syscalls
