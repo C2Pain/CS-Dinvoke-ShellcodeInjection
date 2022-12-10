@@ -372,8 +372,7 @@ namespace ShellcodeInjection
                 readbyte(args[3]);
             
             Console.WriteLine("Shellcode Length: " + buf.Length);
-            
-            
+
             if (args.Length == 0 && fileexistflag)
                 syscalls("explorer");
             else if (fileexistflag)
@@ -395,16 +394,13 @@ namespace ShellcodeInjection
                     case "-s":
                         syscalls(args[1]);
                         break;
-                    case "-h":
-                        usage();
-                        break;
                 }
             } 
             else 
             {
                 Console.WriteLine();
                 Console.WriteLine("[*] Error!");
-                Console.WriteLine("Please check the usage with -h option. ");
+                Console.WriteLine("Please check the usage again.");
                 Console.WriteLine();
             }
         }
